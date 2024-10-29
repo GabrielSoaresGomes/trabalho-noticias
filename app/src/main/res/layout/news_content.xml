@@ -1,0 +1,93 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Navbar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:background="#004daa"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="40sp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/hamburger_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="24dp"
+                    android:layout_height="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="#000" />
+
+                <TextView
+                    android:layout_width="24dp"
+                    android:layout_height="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="#000" />
+
+                <TextView
+                    android:layout_width="24dp"
+                    android:layout_height="4dp"
+                    android:background="#000" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="140sp"
+            android:layout_height="match_parent"
+            android:text="ESTADÃO"
+            android:textSize="30sp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <!-- News Content -->
+    <ImageView
+        android:id="@+id/news_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/news_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/news_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#625353"
+        android:textColor="#91BAF2"
+        android:textStyle="bold"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="4dp"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/news_full_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp" />
+</LinearLayout>

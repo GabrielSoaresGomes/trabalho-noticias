@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:background="#004daa"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+    >
+
+        <LinearLayout
+            android:layout_width="40sp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+        >
+            <LinearLayout
+                android:id="@+id/hamburger_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:padding="8dp"
+            >
+
+                <TextView
+                    android:layout_width="24dp"
+                    android:layout_height="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="#000"
+                />
+
+                <TextView
+                    android:layout_width="24dp"
+                    android:layout_height="4dp"
+                    android:background="#000"
+                    android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:layout_width="24dp"
+                    android:layout_height="4dp"
+                    android:background="#000"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="140sp"
+            android:layout_height="match_parent"
+            android:text="ESTADÃO"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+        />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <ListView
+            android:id="@+id/news_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_to_second_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:background="#fff"
+        android:fontFamily="sans-serif"
+        android:text="Ir para segunda tela"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+</LinearLayout>
